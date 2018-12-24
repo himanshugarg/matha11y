@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "ABP",
+  "version": "1.0",
+
+  "description": "Replaces images that look like math to Mathpix by their latex",
+
+  "icons": {
+    "48": "icons/icons8-sign-language.png"
+  },
+  "content_scripts": [ {
+      "matches": ["*://localhost/*"],
+      "js": ["content.js"]
+    }    
+  ],
+  "permissions": ["https://api.mathpix.com/*"]  
+}
