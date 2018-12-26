@@ -9,9 +9,9 @@
     "48": "icons/icons8-sign-language.png"
   },
   "content_scripts": [ {
-      "matches": ["*://localhost/*"],
+      "matches": ["*://localhost/*", "https://*.wikipedia.org/*", "https://*.google.com/*"],
       "js": ["content.js"]
     }    
   ],
-  "permissions": ["https://api.mathpix.com/*"]  
+  "permissions": ["https://api.mathpix.com/*", "https://cdnjs.cloudflare.com/*"]  
 }
